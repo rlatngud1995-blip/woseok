@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>보험진단센터 | 이우석 설계사 무료 보험 진단 상담</title>
+<meta name="description" content="어려운 보험, 쉽게 풀어드려요. 가입한 보험의 부족·중복 보장 진단, 보험료 다이어트, 보험금 청구까지 이우석 설계사가 무료로 상담합니다. 010-9326-8465">
+<meta name="keywords" content="보험진단센터, 보험진단, 무료 보험상담, 보장분석, 보험료 절약, 실손보험, 보험금 청구, 이우석 설계사">
+<meta property="og:type" content="website">
+<meta property="og:title" content="보험진단센터 | 보험 고민, 편하게 시작하세요">
+<meta property="og:description" content="상담 비용 0원, 가입 권유 없음. 이우석 설계사 010-9326-8465">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+header{position:sticky;top:0;z-index:20;background:#fff}
+.chips label{cursor:pointer}.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips span{display:inline-block}
+.chips input:checked+span{border-color:#0E9F7E;background:#E8F7F2;color:#0B7A61;font-weight:700}
+.chips input:focus-visible+span{outline:2px solid #0E9F7E;outline-offset:2px}
+.err{display:none;color:#B91C1C;font-size:14px;margin:0;text-align:center}
+.hint{margin:0;font-size:13px;color:#667085;text-align:center}
+.pro{display:flex;flex-wrap:wrap;gap:20px;align-items:center;justify-content:space-between;background:#F9FAFB;border-radius:24px;padding:36px 40px}
+.pro b{font-size:26px;font-weight:900}.pro small{font-size:15px;color:#475467;font-weight:500;margin-left:6px}
+.pro p{margin:8px 0 0;color:#475467;font-size:15px;line-height:1.7}
+.pro a.tel{font-size:26px;font-weight:900;color:#0E9F7E;text-decoration:none}
+body{margin:0;background:#FFFFFF;color:#1B2430;font-family:'Noto Sans KR','Noto Sans CJK KR',sans-serif}
+.wrap{max-width:1200px;margin:0 auto;padding:0 40px}
+a{color:inherit;text-decoration:none}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;font-size:21px}
+.logo span{width:30px;height:30px;border-radius:50%;background:#0E9F7E;display:inline-flex;align-items:center;justify-content:center}
+nav{display:flex;gap:30px;font-size:15px;font-weight:500;color:#475467}
+.pill{padding:12px 22px;border-radius:999px;background:#0E9F7E;color:#fff;font-weight:700;font-size:15px}
+.hero{background:#E8F7F2;border-radius:32px;margin:8px 24px 0;padding:80px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end}
+.tag{display:inline-block;background:#fff;color:#0B7A61;font-weight:700;font-size:14px;padding:8px 14px;border-radius:999px}
+.hero h1{font-size:54px;line-height:1.28;font-weight:900;letter-spacing:-2px;margin:20px 0}
+.hero h1 em{font-style:normal;color:#0E9F7E}
+.hero p{font-size:18px;line-height:1.75;color:#475467;margin:0 0 32px}
+.big{display:inline-block;padding:19px 32px;border-radius:16px;background:#1B2430;color:#fff;font-weight:700;font-size:17px}
+.hero-l{padding-bottom:80px}
+.phone{background:#fff;border-radius:28px 28px 0 0;padding:28px 24px 40px;box-shadow:0 -10px 40px rgba(14,159,126,.15);display:flex;flex-direction:column;gap:14px}
+.chat{max-width:80%;padding:14px 16px;border-radius:18px;font-size:15px;line-height:1.6}
+.me{align-self:flex-end;background:#0E9F7E;color:#fff;border-bottom-right-radius:4px}
+.you{background:#F2F4F7;border-bottom-left-radius:4px}
+.who{font-size:12px;color:#667085;margin-bottom:-8px}
+section.blk{padding:100px 0}
+.h2{font-size:38px;font-weight:900;letter-spacing:-1.2px;margin:0 0 12px}
+.sub{font-size:17px;color:#475467;margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.c{border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:10px;min-height:220px}
+.c .ic{width:52px;height:52px;border-radius:16px;background:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:8px}
+.c h3{margin:0;font-size:21px;font-weight:800}
+.c p{margin:0;font-size:15px;line-height:1.7;color:#475467}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.st{border:2px solid #EAECF0;border-radius:24px;padding:30px}
+.st b{display:inline-block;background:#FFE7A3;color:#7A5300;font-size:13px;padding:5px 12px;border-radius:999px}
+.st h3{font-size:20px;margin:16px 0 8px}
+.st p{margin:0;font-size:15px;color:#475467;line-height:1.7}
+.formbox{background:#1B2430;border-radius:32px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:48px;color:#fff}
+.formbox p{color:#C5CCD6;font-size:16px;line-height:1.8}
+form{background:#fff;border-radius:22px;padding:30px;display:flex;flex-direction:column;gap:14px;color:#1B2430}
+label{font-size:14px;font-weight:700}
+input{width:100%;margin-top:6px;padding:15px;border-radius:12px;border:1.5px solid #D0D5DD;font-size:16px;font-family:inherit}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chips span{padding:10px 14px;border-radius:999px;border:1.5px solid #D0D5DD;font-size:14px}
+.chips span.on-old{border-color:#0E9F7E;background:#E8F7F2;color:#0B7A61;font-weight:700}
+.agree{display:flex;gap:8px;align-items:center;font-size:13px;color:#475467;font-weight:400}
+.agree input{width:18px;height:18px;margin:0}
+button{padding:18px;border-radius:14px;border:none;background:#0E9F7E;color:#fff;font-size:17px;font-weight:700;font-family:inherit}
+footer{padding:40px 0 48px;font-size:12px;line-height:1.9;color:#667085}
+.mbar{display:none}
+@media (max-width:600px){
+.pro{padding:24px 20px}.pro b{font-size:22px}.pro a.tel{font-size:22px}
+.mbar{position:fixed!important;left:0;right:0;bottom:0;z-index:30}
+.wrap{padding:0 20px}
+nav{display:none}
+.hero{margin:4px 12px 0;border-radius:24px;padding-top:40px}
+.hero .wrap{grid-template-columns:1fr;gap:28px}
+.hero-l{padding-bottom:0}
+.hero h1{font-size:34px;letter-spacing:-1px}
+.hero p{font-size:16px}
+.big{display:block;text-align:center}
+.phone{padding:22px 18px 28px}
+section.blk{padding:60px 0}
+.h2{font-size:27px}
+.cards,.steps{grid-template-columns:1fr;margin-top:28px;gap:12px}
+.c{min-height:0;padding:24px}
+.formbox{grid-template-columns:1fr;padding:30px 20px;gap:20px;border-radius:24px}
+form{padding:22px 18px}
+footer{padding-bottom:100px}
+.mbar{display:flex;position:sticky;bottom:0;padding:10px 12px;background:#fff;border-top:1px solid #EAECF0;gap:8px}
+.mbar a{flex:1;text-align:center;padding:15px;border-radius:14px;font-weight:700;font-size:15px}
+}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="보험진단센터 홈"><span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>보험진단센터</a><nav aria-label="주 메뉴"><a href="#help">상담 분야</a><a href="#how">이용 방법</a><a href="#about">설계사 소개</a></nav><a class="pill" href="#contact">무료 진단</a></div></header>
+<main id="top"><div class="hero"><div class="wrap">
+<div class="hero-l"><span class="tag">어려운 보험, 쉽게 풀어드려요</span>
+<h1>보험 고민,<br><em>무료 진단</em>으로<br>시작하세요</h1>
+<p>복잡한 약관은 저희가 읽을게요. 지금 가입한 보험이 괜찮은지 쉬운 말로 알려드립니다.</p>
+<a class="big" href="#contact">무료로 내 보험 진단받기 →</a></div>
+<div class="phone">
+<div class="who">고객님</div><div class="chat me">실손보험료가 너무 올랐는데 바꿔야 할까요?</div>
+<div class="who">이우석 설계사</div><div class="chat you">갱신 조건부터 같이 볼게요! 바꾸면 손해인 경우도 있어서 확인이 먼저예요</div>
+<div class="chat me">좋아요, 증권 사진 보내드릴게요</div>
+<div class="who" style="text-align:center;margin:4px 0 0">대화 예시 화면</div>
+</div>
+</div></div>
+<section class="blk" id="help"><div class="wrap">
+<h2 class="h2">이런 것까지 도와드려요</h2><p class="sub">궁금한 게 생기면 언제든 편하게 물어보세요</p>
+<div class="cards">
+<div class="c" style="background:#E8F7F2"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0E9F7E" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div><h3>내 보험 진단</h3><p>가입한 보험을 한눈에 보고, 부족하거나 겹치는 보장을 찾아드려요.</p></div>
+<div class="c" style="background:#FFF6DD"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B7791F" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>보험료 다이어트</h3><p>필요 없는 특약은 빼고, 꼭 필요한 보장만 남겨요.</p></div>
+<div class="c" style="background:#EEF2FF"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div><h3>보험금 청구 도우미</h3><p>병원 다녀오셨나요? 받을 수 있는 보험금을 대신 챙겨드려요.</p></div>
+</div></div></section>
+<section class="blk" id="how" style="padding-top:0"><div class="wrap">
+<h2 class="h2">이용 방법은 간단해요</h2>
+<div class="steps">
+<div class="st"><b>STEP 1</b><h3>상담 신청</h3><p>이름과 연락처만 남겨주세요. 1분이면 충분해요.</p></div>
+<div class="st"><b>STEP 2</b><h3>보험 진단</h3><p>가입 내역을 확인하고 진단 결과를 쉽게 설명드려요.</p></div>
+<div class="st"><b>STEP 3</b><h3>결정은 천천히</h3><p>가입 권유 없이, 충분히 고민하고 결정하세요.</p></div>
+</div></div></section>
+<section class="blk" id="about" style="padding-top:0"><div class="wrap"><div class="pro">
+<div><span style="font-size:14px;font-weight:700;color:#0B7A61">담당 설계사</span><br><b>이우석</b><small>보험설계사</small><p>어려운 보험 용어 없이, 고객님 입장에서 쉽고 솔직하게 설명드릴게요.</p></div>
+<a class="tel" href="tel:01093268465">010-9326-8465</a>
+</div></div></section>
+<section class="blk" id="contact" style="padding-top:0"><div class="wrap"><div class="formbox">
+<div><h2 class="h2" style="color:#fff">지금 무료로<br>진단받아 보세요</h2><p>상담 비용 0원, 가입 권유 없음.<br>이우석 설계사가 직접 연락드려요.</p><p style="margin:0"><a href="tel:01093268465" style="color:#6EE7C7;font-size:24px;font-weight:900;text-decoration:none">010-9326-8465</a></p></div>
+<form id="f" novalidate><label for="n">이름<input id="n" placeholder="홍길동" autocomplete="name"></label><label for="p">연락처<input id="p" type="tel" placeholder="010-0000-0000" autocomplete="tel"></label>
+<fieldset style="border:none;margin:0;padding:0"><legend style="font-size:14px;font-weight:700;padding:0">궁금한 분야</legend><div class="chips">
+<label><input type="radio" name="t" value="보험 진단" checked><span>보험 진단</span></label><label><input type="radio" name="t" value="실손"><span>실손</span></label><label><input type="radio" name="t" value="암·건강"><span>암·건강</span></label><label><input type="radio" name="t" value="자녀"><span>자녀</span></label><label><input type="radio" name="t" value="보험금 청구"><span>보험금 청구</span></label></div></fieldset>
+<label class="agree"><input id="a" type="checkbox">개인정보(이름·연락처) 수집 및 상담 목적 이용 동의 (필수)</label><p class="err" id="e" role="alert"></p><button type="submit">무료 진단 신청</button><p class="hint">버튼을 누르면 문자 앱이 열리고 신청 내용이 이우석 설계사에게 전달돼요</p></form>
+</div></div></section>
+</main>
+<footer><div class="wrap"><b style="color:#1B2430;font-size:14px">보험진단센터</b><br>보험설계사 이우석 · 상담 문의 <a href="tel:01093268465" style="color:#667085">010-9326-8465</a><br>기존 계약 해지 후 신계약 체결 시 보험인수 거절, 보험료 인상, 보장내용 변경 등 불이익이 발생할 수 있습니다.</div></footer>
+<div class="mbar"><a href="tel:01093268465" style="background:#1B2430;color:#fff">전화 상담</a><a href="#contact" style="background:#0E9F7E;color:#fff">무료 진단 신청</a></div>
+<script>
+document.getElementById('f').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var n=document.getElementById('n').value.trim(),p=document.getElementById('p').value.trim(),
+      t=(document.querySelector('input[name=t]:checked')||{}).value||'',a=document.getElementById('a').checked,e=document.getElementById('e');
+  var msg=!n?'이름을 입력해 주세요.':!p?'연락처를 입력해 주세요.':!a?'개인정보 수집 및 이용에 동의해 주세요.':'';
+  if(msg){e.textContent=msg;e.style.display='block';return;}
+  e.style.display='none';
+  var body='[보험진단센터 상담신청]\n이름: '+n+'\n연락처: '+p+'\n분야: '+t;
+  var sep=/iPhone|iPad|iPod/i.test(navigator.userAgent)?'&':'?';
+  location.href='sms:01093268465'+sep+'body='+encodeURIComponent(body);
+});
+</script>
+</body></html>
