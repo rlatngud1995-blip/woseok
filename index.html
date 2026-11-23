@@ -38,9 +38,9 @@ nav{display:flex;gap:30px;font-size:15px;font-weight:500;color:#475467}
 .hero h1 em{font-style:normal;color:#0E9F7E}
 .hero p{font-size:18px;line-height:1.75;color:#475467;margin:0 0 32px}
 .big{display:inline-block;padding:19px 32px;border-radius:16px;background:#1B2430;color:#fff;font-weight:700;font-size:17px}
-.hero-r{display:flex;flex-direction:column;align-items:flex-start}
-.hero-r .phone{align-self:stretch;padding-top:60px}
-.hero-face{display:block;width:170px;height:auto;border-radius:20px;border:5px solid #fff;box-shadow:0 12px 30px rgba(14,159,126,.2);margin:0 0 -40px -40px;position:relative;z-index:2}
+.hero-r{position:relative}
+.hero-face{position:absolute;top:-190px;left:-235px;width:200px;height:auto;border-radius:20px;border:5px solid #fff;box-shadow:0 12px 30px rgba(14,159,126,.2);z-index:2}
+@media (max-width:1100px) and (min-width:601px){.hero-face{width:160px;top:-170px;left:-120px}}
 .hero-l{padding-bottom:80px}
 .phone{position:relative;background:#fff;border-radius:28px 28px 0 0;padding:28px 24px 40px;box-shadow:0 -10px 40px rgba(14,159,126,.15);display:flex;flex-direction:column;gap:14px}
 .chat{max-width:80%;padding:14px 16px;border-radius:18px;font-size:15px;line-height:1.6}
@@ -100,7 +100,7 @@ nav{display:none}
 .hero p{font-size:16px}
 .big{display:block;text-align:center}
 .phone{padding:22px 18px 28px}
-.hero-r{align-items:center}.hero-face{width:140px;margin:0 0 -28px 0}.hero-r .phone{padding-top:44px}
+.hero-r{align-items:center}.hero-r{display:flex;flex-direction:column;align-items:center}.hero-r .phone{align-self:stretch;padding-top:44px}.hero-face{position:relative;top:0;left:0;width:140px;margin:0 0 -28px 0}
 section.blk{padding:60px 0}
 .h2{font-size:27px}
 .cards,.steps{grid-template-columns:1fr;margin-top:28px;gap:12px}
