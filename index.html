@@ -38,8 +38,11 @@ nav{display:flex;gap:30px;font-size:15px;font-weight:500;color:#475467}
 .hero h1 em{font-style:normal;color:#0E9F7E}
 .hero p{font-size:18px;line-height:1.75;color:#475467;margin:0 0 32px}
 .big{display:inline-block;padding:19px 32px;border-radius:16px;background:#1B2430;color:#fff;font-weight:700;font-size:17px}
+.hero-r{display:flex;flex-direction:column;align-items:flex-start}
+.hero-r .phone{align-self:stretch;padding-top:60px}
+.hero-face{display:block;width:170px;height:auto;border-radius:20px;border:5px solid #fff;box-shadow:0 12px 30px rgba(14,159,126,.2);margin:0 0 -40px -40px;position:relative;z-index:2}
 .hero-l{padding-bottom:80px}
-.phone{background:#fff;border-radius:28px 28px 0 0;padding:28px 24px 40px;box-shadow:0 -10px 40px rgba(14,159,126,.15);display:flex;flex-direction:column;gap:14px}
+.phone{position:relative;background:#fff;border-radius:28px 28px 0 0;padding:28px 24px 40px;box-shadow:0 -10px 40px rgba(14,159,126,.15);display:flex;flex-direction:column;gap:14px}
 .chat{max-width:80%;padding:14px 16px;border-radius:18px;font-size:15px;line-height:1.6}
 .me{align-self:flex-end;background:#0E9F7E;color:#fff;border-bottom-right-radius:4px}
 .you{background:#F2F4F7;border-bottom-left-radius:4px}
@@ -83,10 +86,6 @@ button{padding:18px;border-radius:14px;border:none;background:#0E9F7E;color:#fff
 .rep-cap{margin:24px 0 0;font-size:18px;font-weight:700;color:#1B2430;text-align:center}
 .pro-card{width:100%;max-width:420px;border-radius:16px;border:1px solid #EAECF0;display:block;height:auto}
 .pro-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
-.idpics{display:flex;gap:14px;align-items:flex-end;margin-top:28px}
-.idpics img{display:block;height:auto;border-radius:14px;background:#fff}
-.idp{width:34%;max-width:170px}
-.idc{width:62%;max-width:320px}
 footer{padding:40px 0 48px;font-size:12px;line-height:1.9;color:#667085}
 .mbar{display:none}
 @media (max-width:600px){
@@ -101,6 +100,7 @@ nav{display:none}
 .hero p{font-size:16px}
 .big{display:block;text-align:center}
 .phone{padding:22px 18px 28px}
+.hero-r{align-items:center}.hero-face{width:140px;margin:0 0 -28px 0}.hero-r .phone{padding-top:44px}
 section.blk{padding:60px 0}
 .h2{font-size:27px}
 .cards,.steps{grid-template-columns:1fr;margin-top:28px;gap:12px}
@@ -120,12 +120,12 @@ footer{padding-bottom:100px}
 <h1>보험 고민,<br><em>무료 진단</em>으로<br>시작하세요</h1>
 <p>복잡한 약관은 저희가 읽을게요. 지금 가입한 보험이 괜찮은지 쉬운 말로 알려드립니다.</p>
 <a class="big" href="#contact">무료로 내 보험 진단받기 →</a></div>
-<div class="phone">
+<div class="hero-r"><img class="hero-face" src="/images/profile.jpg" alt="상담 담당자 프로필 사진" width="480" height="589"><div class="phone">
 <div class="who">고객님</div><div class="chat me">실손보험료가 너무 올랐는데 바꿔야 할까요?</div>
 <div class="who">상담 담당자</div><div class="chat you">갱신 조건부터 같이 볼게요! 바꾸면 손해인 경우도 있어서 확인이 먼저예요</div>
 <div class="chat me">좋아요, 증권 사진 보내드릴게요</div>
 <div class="who" style="text-align:center;margin:4px 0 0">대화 예시 화면</div>
-</div>
+</div></div>
 </div></div>
 <section class="blk" id="help"><div class="wrap">
 <h2 class="h2">이런 것까지 도와드려요</h2><p class="sub">궁금한 게 생기면 언제든 편하게 물어보세요</p>
@@ -152,7 +152,7 @@ footer{padding-bottom:100px}
 <div class="st"><b>STEP 3</b><h3>결정은 천천히</h3><p>가입 권유 없이, 충분히 고민하고 결정하세요.</p></div>
 </div></div></section>
 <section class="blk" id="contact" style="padding-top:0"><div class="wrap"><div class="formbox">
-<div><h2 class="h2" style="color:#fff">지금 무료로<br>진단받아 보세요</h2><p>상담 비용 0원, 가입 권유 없음.<br>담당자가 직접 연락드려요.</p><p style="margin:0"><a href="tel:01093268465" style="color:#6EE7C7;font-size:24px;font-weight:900;text-decoration:none">010-9326-8465</a></p><p style="margin:16px 0 0"><a class="kbtn kakao" href="https://open.kakao.com/o/s3cXMjYi" target="_blank" rel="noopener">카카오톡 상담하기</a></p><div class="idpics"><img class="idp" src="/images/profile.jpg" alt="상담 담당자 프로필 사진" width="480" height="589" loading="lazy"><img class="idc" src="/images/card.jpg" alt="새움지사 명함 — 유퍼스트보험마케팅(주)" width="900" height="773" loading="lazy"></div></div>
+<div><h2 class="h2" style="color:#fff">지금 무료로<br>진단받아 보세요</h2><p>상담 비용 0원, 가입 권유 없음.<br>담당자가 직접 연락드려요.</p><p style="margin:0"><a href="tel:01093268465" style="color:#6EE7C7;font-size:24px;font-weight:900;text-decoration:none">010-9326-8465</a></p><p style="margin:16px 0 0"><a class="kbtn kakao" href="https://open.kakao.com/o/s3cXMjYi" target="_blank" rel="noopener">카카오톡 상담하기</a></p></div>
 <form id="f" novalidate><label for="n">이름<input id="n" placeholder="홍길동" autocomplete="name"></label><label for="p">연락처<input id="p" type="tel" placeholder="010-0000-0000" autocomplete="tel"></label>
 <fieldset style="border:none;margin:0;padding:0"><legend style="font-size:14px;font-weight:700;padding:0">궁금한 분야</legend><div class="chips">
 <label><input type="radio" name="t" value="보험 진단" checked><span>보험 진단</span></label><label><input type="radio" name="t" value="실손"><span>실손</span></label><label><input type="radio" name="t" value="암·건강"><span>암·건강</span></label><label><input type="radio" name="t" value="자녀"><span>자녀</span></label><label><input type="radio" name="t" value="보험금 청구"><span>보험금 청구</span></label></div></fieldset>
