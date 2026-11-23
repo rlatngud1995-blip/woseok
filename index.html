@@ -68,6 +68,21 @@ input{width:100%;margin-top:6px;padding:15px;border-radius:12px;border:1.5px sol
 .agree{display:flex;gap:8px;align-items:center;font-size:13px;color:#475467;font-weight:400}
 .agree input{width:18px;height:18px;margin:0}
 button{padding:18px;border-radius:14px;border:none;background:#0E9F7E;color:#fff;font-size:17px;font-weight:700;font-family:inherit}
+.kakao{background:#FEE500!important;color:#191919!important}
+.kbtn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:14px;font-weight:700;font-size:16px}
+.rep-wrap{display:flex;flex-direction:column;align-items:center;margin-top:44px}
+.rep{width:100%;max-width:480px;background:#fff;border-radius:28px;padding:32px;box-shadow:0 12px 40px rgba(14,159,126,.14);border:1px solid #EAECF0}
+.rep-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:22px}
+.rep-h b{font-size:19px;font-weight:800}.rep-h span{font-size:12px;font-weight:700;color:#667085;background:#F2F4F7;padding:6px 12px;border-radius:999px}
+.row{margin-bottom:20px}.row:last-child{margin-bottom:0}
+.row div{display:flex;justify-content:space-between;font-size:15px;margin-bottom:8px}
+.row i{font-style:normal;font-weight:800;font-size:14px}
+.bar{height:10px;border-radius:999px;background:#EEF0F3;overflow:hidden}.bar s{display:block;height:100%;border-radius:999px;background:#0E9F7E}
+.ok{color:#0B7A61}.lack{color:#C2410C}.dup{color:#475467}
+.bar s.lt{background:#8FD9C4}
+.rep-cap{margin:24px 0 0;font-size:18px;font-weight:700;color:#1B2430;text-align:center}
+.pro-card{width:100%;max-width:420px;border-radius:16px;border:1px solid #EAECF0;display:block;height:auto}
+.pro-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 footer{padding:40px 0 48px;font-size:12px;line-height:1.9;color:#667085}
 .mbar{display:none}
 @media (max-width:600px){
@@ -90,10 +105,12 @@ section.blk{padding:60px 0}
 form{padding:22px 18px}
 footer{padding-bottom:100px}
 .mbar{display:flex;position:sticky;bottom:0;padding:10px 12px;background:#fff;border-top:1px solid #EAECF0;gap:8px}
-.mbar a{flex:1;text-align:center;padding:15px;border-radius:14px;font-weight:700;font-size:15px}
+.mbar a{flex:1;text-align:center;padding:15px 6px;border-radius:14px;font-weight:700;font-size:14px}
+.rep{padding:24px 20px}.rep-cap{font-size:16px}
+.pro-card{max-width:100%}
 }
 </style></head><body>
-<header><div class="wrap"><a class="logo" href="#top" aria-label="보험진단센터 홈"><span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>보험진단센터</a><nav aria-label="주 메뉴"><a href="#help">상담 분야</a><a href="#how">이용 방법</a><a href="#about">설계사 소개</a></nav><a class="pill" href="#contact">무료 진단</a></div></header>
+<header><div class="wrap"><a class="logo" href="#top" aria-label="보험진단센터 홈"><span aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></span>보험진단센터</a><nav aria-label="주 메뉴"><a href="#help">상담 분야</a><a href="#report">보장 분석</a><a href="#how">이용 방법</a><a href="#about">설계사 소개</a></nav><a class="pill" href="#contact">무료 진단</a></div></header>
 <main id="top"><div class="hero"><div class="wrap">
 <div class="hero-l"><span class="tag">어려운 보험, 쉽게 풀어드려요</span>
 <h1>보험 고민,<br><em>무료 진단</em>으로<br>시작하세요</h1>
@@ -113,6 +130,16 @@ footer{padding-bottom:100px}
 <div class="c" style="background:#FFF6DD"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#B7791F" stroke-width="2"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div><h3>보험료 다이어트</h3><p>필요 없는 특약은 빼고, 꼭 필요한 보장만 남겨요.</p></div>
 <div class="c" style="background:#EEF2FF"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></svg></div><h3>보험금 청구 도우미</h3><p>병원 다녀오셨나요? 받을 수 있는 보험금을 대신 챙겨드려요.</p></div>
 </div></div></section>
+<section class="blk" id="report" style="padding-top:0"><div class="wrap">
+<h2 class="h2">내 보장, 한눈에 확인하세요</h2><p class="sub">부족한 보장과 겹치는 보장을 쉽게 정리해 드려요</p>
+<div class="rep-wrap"><div class="rep" role="img" aria-label="보장 분석 리포트 예시: 실손 의료비 충분, 암 진단비 부족, 뇌·심장 질환 부족, 상해·수술비 중복">
+<div class="rep-h"><b>보장 분석 리포트</b><span>예시 화면</span></div>
+<div class="row"><div>실손 의료비<i class="ok">충분</i></div><div class="bar"><s style="width:90%"></s></div></div>
+<div class="row"><div>암 진단비<i class="lack">부족</i></div><div class="bar"><s class="lt" style="width:35%"></s></div></div>
+<div class="row"><div>뇌·심장 질환<i class="lack">부족</i></div><div class="bar"><s class="lt" style="width:25%"></s></div></div>
+<div class="row"><div>상해 · 수술비<i class="dup">중복</i></div><div class="bar"><s style="width:100%"></s></div></div>
+</div><p class="rep-cap">1:1 맞춤분석을 통해 보기 쉽게 설명해드립니다.</p></div>
+</div></section>
 <section class="blk" id="how" style="padding-top:0"><div class="wrap">
 <h2 class="h2">이용 방법은 간단해요</h2>
 <div class="steps">
@@ -121,11 +148,13 @@ footer{padding-bottom:100px}
 <div class="st"><b>STEP 3</b><h3>결정은 천천히</h3><p>가입 권유 없이, 충분히 고민하고 결정하세요.</p></div>
 </div></div></section>
 <section class="blk" id="about" style="padding-top:0"><div class="wrap"><div class="pro">
-<div><span style="font-size:14px;font-weight:700;color:#0B7A61">담당 설계사</span><br><b>이우석</b><small>보험설계사</small><p>어려운 보험 용어 없이, 고객님 입장에서 쉽고 솔직하게 설명드릴게요.</p></div>
-<a class="tel" href="tel:01093268465">010-9326-8465</a>
+<div><span style="font-size:14px;font-weight:700;color:#0B7A61">담당 설계사</span><br><b>이우석</b><small>새움지사 팀장</small><p>어려운 보험 용어 없이, 고객님 입장에서 쉽고 솔직하게 설명드릴게요.<br>유퍼스트보험마케팅(주) 소속</p>
+<p style="margin-top:14px"><a class="tel" href="tel:01093268465">010-9326-8465</a></p>
+<div class="pro-btns"><a class="kbtn kakao" href="https://open.kakao.com/o/s3cXMjYi" target="_blank" rel="noopener">카카오톡 상담하기</a></div></div>
+<img class="pro-card" src="/images/card.jpg" alt="이우석 팀장 명함 — 새움지사, 유퍼스트보험마케팅(주)" width="900" height="773" loading="lazy">
 </div></div></section>
 <section class="blk" id="contact" style="padding-top:0"><div class="wrap"><div class="formbox">
-<div><h2 class="h2" style="color:#fff">지금 무료로<br>진단받아 보세요</h2><p>상담 비용 0원, 가입 권유 없음.<br>이우석 설계사가 직접 연락드려요.</p><p style="margin:0"><a href="tel:01093268465" style="color:#6EE7C7;font-size:24px;font-weight:900;text-decoration:none">010-9326-8465</a></p></div>
+<div><h2 class="h2" style="color:#fff">지금 무료로<br>진단받아 보세요</h2><p>상담 비용 0원, 가입 권유 없음.<br>이우석 설계사가 직접 연락드려요.</p><p style="margin:0"><a href="tel:01093268465" style="color:#6EE7C7;font-size:24px;font-weight:900;text-decoration:none">010-9326-8465</a></p><p style="margin:16px 0 0"><a class="kbtn kakao" href="https://open.kakao.com/o/s3cXMjYi" target="_blank" rel="noopener">카카오톡 상담하기</a></p></div>
 <form id="f" novalidate><label for="n">이름<input id="n" placeholder="홍길동" autocomplete="name"></label><label for="p">연락처<input id="p" type="tel" placeholder="010-0000-0000" autocomplete="tel"></label>
 <fieldset style="border:none;margin:0;padding:0"><legend style="font-size:14px;font-weight:700;padding:0">궁금한 분야</legend><div class="chips">
 <label><input type="radio" name="t" value="보험 진단" checked><span>보험 진단</span></label><label><input type="radio" name="t" value="실손"><span>실손</span></label><label><input type="radio" name="t" value="암·건강"><span>암·건강</span></label><label><input type="radio" name="t" value="자녀"><span>자녀</span></label><label><input type="radio" name="t" value="보험금 청구"><span>보험금 청구</span></label></div></fieldset>
@@ -133,7 +162,7 @@ footer{padding-bottom:100px}
 </div></div></section>
 </main>
 <footer><div class="wrap"><b style="color:#1B2430;font-size:14px">보험진단센터</b><br>보험설계사 이우석 · 상담 문의 <a href="tel:01093268465" style="color:#667085">010-9326-8465</a><br>기존 계약 해지 후 신계약 체결 시 보험인수 거절, 보험료 인상, 보장내용 변경 등 불이익이 발생할 수 있습니다.</div></footer>
-<div class="mbar"><a href="tel:01093268465" style="background:#1B2430;color:#fff">전화 상담</a><a href="#contact" style="background:#0E9F7E;color:#fff">무료 진단 신청</a></div>
+<div class="mbar"><a href="tel:01093268465" style="background:#1B2430;color:#fff">전화 상담</a><a class="kakao" href="https://open.kakao.com/o/s3cXMjYi" target="_blank" rel="noopener">카톡 상담</a><a href="#contact" style="background:#0E9F7E;color:#fff">무료 진단 신청</a></div>
 <script>
 document.getElementById('f').addEventListener('submit',function(ev){
   ev.preventDefault();
